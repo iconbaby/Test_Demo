@@ -1,1 +1,1 @@
-include ':app', ':test_toolbar', ':test_drawarlayout'
+include ':app', ':test_toolbar', ':test_drawarlayout', ':test_retrofit'
