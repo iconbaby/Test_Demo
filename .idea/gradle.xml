@@ -11,7 +11,9 @@
             <option value="$PROJECT_DIR$/app" />
             <option value="$PROJECT_DIR$/test_drawarlayout" />
             <option value="$PROJECT_DIR$/test_retrofit" />
+            <option value="$PROJECT_DIR$/test_tablayout_viewpager" />
             <option value="$PROJECT_DIR$/test_toolbar" />
+            <option value="$PROJECT_DIR$/test_vally" />
           </set>
         </option>
         <option name="resolveModulePerSourceSet" value="false" />
