@@ -50,22 +50,6 @@ public class MainActivity extends AppCompatActivity {
         downloadHandler.sendEmptyMessageDelayed(MSG_START_DOWNLOAD, 1000);
         isDownload = true;
 
-        File file = new File("/data/local/hg_firstboot_flag");
-        if (!file.exists()) {
-            try {
-                file.createNewFile();
-            } catch (IOException e) {
-                e.printStackTrace();
-            }
-        }
-
-    }
-
-    private void sendRestoreBroadcast() {
-        SharedPreferences ss = getSharedPreferences("SS", MODE_PRIVATE);
-        Intent intent = new Intent("com.amt.restore");
-        intent.setPackage("com.android.smart.terminal.settings");
-        sendBroadcast(intent);
     }
 
     private void initThread() {
@@ -119,33 +103,5 @@ public class MainActivity extends AppCompatActivity {
         downloadSpeed = (TextView) findViewById(R.id.tv_speed);
     }
 
-    public static Dialog dialog;
 
-    private void popDialog() {
-        dialog = new Dialog(this, R.style.selectorDialog);
-        dialog.setContentView(R.layout.upgrade_success_dialog_layout);
-        Window window = dialog.getWindow();
-        window.setType(WindowManager.LayoutParams.TYPE_SYSTEM_ALERT);
-        WindowManager.LayoutParams lp = window.getAttributes();
-        WindowManager wm = (WindowManager) getSystemService(Context.WINDOW_SERVICE);
-
-        int w = wm.getDefaultDisplay().getWidth();
-        int h = wm.getDefaultDisplay().getHeight();
-        lp.width = (int) (w / 1.3f);
-        lp.height = (int) (h / 1.2f);
-        window.setAttributes(lp);
-
-        TextView tvCodeTitle = (TextView) dialog.findViewById(R.id.error_code_dialog_title);
-        TextView tvCodeInfo = (TextView) dialog.findViewById(R.id.error_code_dialog_info_msg);
-        TextView tvSuggest = (TextView) dialog.findViewById(R.id.error_code_dialog_info_suggestion);
-
-        dialog.findViewById(R.id.error_code_dialog_back).setOnClickListener(new View.OnClickListener() {
-            @Override
-            public void onClick(View view) {
-                dialog.dismiss();
-                dialog = null;
-            }
-        });
-        dialog.show();
-    }
 }

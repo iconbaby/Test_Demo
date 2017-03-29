@@ -53,6 +53,7 @@ public class MainActivity extends AppCompatActivity {
         toolBar.setNavigationIcon(R.mipmap.ic_launcher);
         toolBar.setOnMenuItemClickListener(listener);
 
+
     }
 
     @Override

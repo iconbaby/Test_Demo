@@ -5,6 +5,7 @@
       <module fileurl="file://$PROJECT_DIR$/Test_Demo.iml" filepath="$PROJECT_DIR$/Test_Demo.iml" />
       <module fileurl="file://$PROJECT_DIR$/app/app.iml" filepath="$PROJECT_DIR$/app/app.iml" />
       <module fileurl="file://$PROJECT_DIR$/myapplication/myapplication.iml" filepath="$PROJECT_DIR$/myapplication/myapplication.iml" />
+      <module fileurl="file://$PROJECT_DIR$/test_conditionvariable/test_conditionvariable.iml" filepath="$PROJECT_DIR$/test_conditionvariable/test_conditionvariable.iml" />
       <module fileurl="file://$PROJECT_DIR$/test_drawarlayout/test_drawarlayout.iml" filepath="$PROJECT_DIR$/test_drawarlayout/test_drawarlayout.iml" />
       <module fileurl="file://$PROJECT_DIR$/test_handlerthread/test_handlerthread.iml" filepath="$PROJECT_DIR$/test_handlerthread/test_handlerthread.iml" />
       <module fileurl="file://$PROJECT_DIR$/test_qrcode/test_qrcode.iml" filepath="$PROJECT_DIR$/test_qrcode/test_qrcode.iml" />

@@ -23,6 +23,7 @@ public class MainActivity extends AppCompatActivity {
         try {
             FileInputStream fos = new FileInputStream(file);
             int read = fos.read();
+
             Log.i("++++++", "" + read);
 
         } catch (FileNotFoundException e) {
