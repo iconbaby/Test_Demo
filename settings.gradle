@@ -1,1 +1,1 @@
-include ':app', ':test_toolbar', ':test_drawarlayout', ':test_retrofit', ':test_tablayout_viewpager', ':test_vally', ':test_handlerthread', ':myapplication', ':test_qrcode', ':test_conditionvariable'
+include ':app', ':test_toolbar', ':test_drawarlayout', ':test_retrofit', ':test_tablayout_viewpager', ':test_vally', ':test_handlerthread', ':myapplication', ':test_qrcode', ':test_conditionvariable', ':test_thread_await'

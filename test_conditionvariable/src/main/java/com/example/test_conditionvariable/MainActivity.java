@@ -1,10 +1,16 @@
 package com.example.test_conditionvariable;
 
+import android.content.BroadcastReceiver;
+import android.content.Context;
+import android.content.Intent;
 import android.os.ConditionVariable;
 import android.os.Handler;
+import android.os.HandlerThread;
 import android.os.Message;
+import android.os.UserHandle;
 import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;
+import android.util.Log;
 import android.view.View;
 import android.widget.Button;
 import android.widget.TextView;
@@ -25,7 +31,39 @@ public class MainActivity extends AppCompatActivity implements View.OnClickListe
         tv = (TextView) findViewById(R.id.text);
         isStart = true;
         btn.setOnClickListener(this);
-        new Thread(new MyThread()).start();
+
+        Thread thread = new Thread(new Runnable() {
+            @Override
+            public void run() {
+                Runnable runnable = new Runnable() {
+                    @Override
+                    public void run() {
+                        synchronized (this) {
+                            Log.i("+++", "runnable");
+                            Log.i("+++", Thread.currentThread().toString());
+
+
+                        }
+                    }
+                };
+                Message msg = Message.obtain(handler, runnable);
+                msg.setAsynchronous(true);
+                handler.sendMessage(msg);
+                synchronized (runnable) {
+                    while (true) {
+                        try {
+                            Log.i("+++", Thread.currentThread().toString());
+                            runnable.wait();
+                            Log.i("+++", "runnable after");
+                        } catch (InterruptedException e) {
+                            e.printStackTrace();
+                        }
+                    }
+                }
+            }
+        });
+
+        thread.start();
     }
 
     Handler handler = new Handler() {
@@ -39,6 +77,7 @@ public class MainActivity extends AppCompatActivity implements View.OnClickListe
             }
         }
     };
+
 
     private class MyThread implements Runnable {
 
@@ -63,4 +102,22 @@ public class MainActivity extends AppCompatActivity implements View.OnClickListe
         super.onDestroy();
         isStart = false;
     }
+
+//    private void sendBrocast() {
+//        final ConditionVariable condition = new ConditionVariable();//线程锁
+//        Intent intent = new Intent("android.intent.action.MASTER_CLEAR_NOTIFICATION");
+//        this.sendOrderedBroadcastAsUser(intent, UserHandle.
+//                        android.Manifest.permission.MASTER_CLEAR,
+//                new BroadcastReceiver() {
+//                    @Override
+//                    public void onReceive(Context context, Intent intent) {
+//                        condition.open();
+//                    }
+//                }, null, 0, null, null);
+//        // Block until the ordered broadcast has completed.
+//        condition.block();
+//    }
+
 }
+
+
