@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="utf-8"?>
+<PreferenceScreen xmlns:android="http://schemas.android.com/apk/res/android"
+    android:key="screen_list"
+    android:summary="说明摘要"
+    android:title="标题" >
+
+    <CheckBoxPreference
+        android:key="medf"
+        android:summaryOff="马尔代夫未被选中"
+        android:summaryOn="马尔代夫被选中了"
+        android:title="马尔代夫" >
+    </CheckBoxPreference>
+    <CheckBoxPreference
+        android:key="mlqs"
+        android:summaryOff="毛里求斯未被选中"
+        android:summaryOn="毛里求斯被选中了"
+        android:title="毛里求斯" >
+    </CheckBoxPreference>
+
+</PreferenceScreen>

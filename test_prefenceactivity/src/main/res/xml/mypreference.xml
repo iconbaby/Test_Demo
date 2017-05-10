@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="utf-8"?>
+<PreferenceScreen xmlns:android="http://schemas.android.com/apk/res/android"
+    android:key="screen_list"
+    android:summary="说明摘要"
+    android:title="标题">
+
+    <ListPreference
+        android:defaultValue="@string/deflault_list_entries_value"
+        android:dialogTitle="这里是弹出框"
+        android:entries="@array/list_entries"
+        android:entryValues="@array/list_entries_value"
+        android:key="mypre"
+        android:summary="说明摘要"
+        android:title="标题" />
+
+</PreferenceScreen>

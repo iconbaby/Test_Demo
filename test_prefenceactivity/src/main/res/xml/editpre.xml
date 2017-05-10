@@ -1,0 +1,49 @@
+<?xml version="1.0" encoding="utf-8"?>
+<PreferenceScreen xmlns:android="http://schemas.android.com/apk/res/android"
+    android:key="edittext_screen"
+    android:summary="屏幕简要说明"
+    android:title="屏幕标题" >
+
+    <!-- 第一组 -->
+    <PreferenceCategory
+        xmlns:android="http://schemas.android.com/apk/res/android"
+        android:key="edittext_screen"
+        android:summary="点击进入第一组首选项"
+        android:title="第一组" >
+        <EditTextPreference
+            android:dialogTitle="输入您的名称："
+            android:key="editTitlePreference1"
+            android:summary="简要说明"
+            android:title="输入名称" >
+        </EditTextPreference>
+    </PreferenceCategory>
+
+    <!-- 第二组 -->
+    <PreferenceCategory
+        xmlns:android="http://schemas.android.com/apk/res/android"
+        android:key="edittext_screen"
+        android:summary="点击进入第二组首选项"
+        android:title="第二组" >
+        <EditTextPreference
+            android:dialogTitle="输入您的名称："
+            android:key="editTitlePreference2"
+            android:summary="简要说明"
+            android:title="输入名称" >
+        </EditTextPreference>
+    </PreferenceCategory>
+
+    <!-- 第三组 -->
+    <PreferenceCategory
+        xmlns:android="http://schemas.android.com/apk/res/android"
+        android:key="edittext_screen"
+        android:summary="点击进入第三组首选项"
+        android:title="第三组" >
+        <EditTextPreference
+            android:dialogTitle="输入您的名称："
+            android:key="editTitlePreference3"
+            android:summary="简要说明"
+            android:title="输入名称" >
+        </EditTextPreference>
+    </PreferenceCategory>
+
+</PreferenceScreen>  

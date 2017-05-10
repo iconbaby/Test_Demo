@@ -6,6 +6,7 @@ import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;
 import android.util.Log;
 import android.widget.Button;
+
 /*wait 方法会释放当前的锁并且阻塞在那，只有当有锁唤醒时，才会继续执行之后的代码，并且会再次阻塞在那*/
 public class MainActivity extends AppCompatActivity {
 
@@ -23,7 +24,10 @@ public class MainActivity extends AppCompatActivity {
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_main);
+        String sdk = android.os.Build.VERSION.SDK;
+        Log.i(TAG, "onCreate: "+sdk);
         btn = (Button) findViewById(R.id.btn);
+
         Thread chileThread = new Thread() {
             @Override
             public void run() {

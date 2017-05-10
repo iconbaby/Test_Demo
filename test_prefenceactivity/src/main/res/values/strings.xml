@@ -1,0 +1,17 @@
+<resources>
+    <string name="app_name">test_prefenceActivity</string>
+    <string-array name="list_entries" >
+        <item>shandong</item>
+        <item>fujian</item>
+        <item>guangxi</item>
+        <item>sichuan</item>
+
+    </string-array>
+    <string-array name="list_entries_value" >
+        <item>山东</item>
+        <item>福建</item>
+        <item>广西</item>
+        <item>四川</item>
+    </string-array>
+    <string name="deflault_list_entries_value">beijing</string>
+</resources>

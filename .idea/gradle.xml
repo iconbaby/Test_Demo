@@ -14,6 +14,8 @@
             <option value="$PROJECT_DIR$/test_conditionvariable" />
             <option value="$PROJECT_DIR$/test_drawarlayout" />
             <option value="$PROJECT_DIR$/test_handlerthread" />
+            <option value="$PROJECT_DIR$/test_prefenceactivity" />
+            <option value="$PROJECT_DIR$/test_preference_fragment" />
             <option value="$PROJECT_DIR$/test_qrcode" />
             <option value="$PROJECT_DIR$/test_retrofit" />
             <option value="$PROJECT_DIR$/test_tablayout_viewpager" />
