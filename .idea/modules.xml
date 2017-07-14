@@ -11,6 +11,7 @@
       <module fileurl="file://$PROJECT_DIR$/test_prefenceactivity/test_prefenceactivity.iml" filepath="$PROJECT_DIR$/test_prefenceactivity/test_prefenceactivity.iml" />
       <module fileurl="file://$PROJECT_DIR$/test_preference_fragment/test_preference_fragment.iml" filepath="$PROJECT_DIR$/test_preference_fragment/test_preference_fragment.iml" />
       <module fileurl="file://$PROJECT_DIR$/test_qrcode/test_qrcode.iml" filepath="$PROJECT_DIR$/test_qrcode/test_qrcode.iml" />
+      <module fileurl="file://$PROJECT_DIR$/test_recyclerviewandcardview/test_recyclerviewandcardview.iml" filepath="$PROJECT_DIR$/test_recyclerviewandcardview/test_recyclerviewandcardview.iml" />
       <module fileurl="file://$PROJECT_DIR$/test_retrofit/test_retrofit.iml" filepath="$PROJECT_DIR$/test_retrofit/test_retrofit.iml" />
       <module fileurl="file://$PROJECT_DIR$/test_tablayout_viewpager/test_tablayout_viewpager.iml" filepath="$PROJECT_DIR$/test_tablayout_viewpager/test_tablayout_viewpager.iml" />
       <module fileurl="file://$PROJECT_DIR$/test_thread_await/test_thread_await.iml" filepath="$PROJECT_DIR$/test_thread_await/test_thread_await.iml" />
